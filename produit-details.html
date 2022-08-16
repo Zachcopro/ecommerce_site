@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market place</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- section Header -->
+    <section class="header-section">
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/mologo.png" alt="Zpro logo"></a>
+
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="produit.html">Produit</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="authentification.html">Account</a></li>
+                    </ul>
+                    <a href="panier.html"><img src="./images/cart.png" alt="cart-icons" width="26px" class="cart-icon"></a>
+                    <img src="./images/menu.png" alt="menu-icons" width="26px" class="menu-icon" onclick="toogleButton()">
+                </nav>
+            </header>
+    </section>
+    <!-- details produits -->
+    <section class="details-produits">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/gallery-1.jpg" alt="img produit" width="100%" id="imgProduct" class="img-thumbnail">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="./images/gallery-1.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./images/gallery-2.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./images/gallery-3.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./images/gallery-4.jpg" alt="" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 produit">
+                    <p>
+                        Home /
+                        <span>details produit</span>
+                    </p>
+                    <h1>T-shirt rouge</h1>
+                    <h3>5000 fcfa</h3>
+                    <select name="" id="">
+                            <option value="">selectionner une taille</option>
+                            <option value="">XXL</option>
+                            <option value="">Large grande</option>
+                            <option value="">Taille Moyenne</option>
+                            <option value="">Petite Taille</option>
+                        </select>
+                    <input type="number" value="1">
+                    <a href="panier.html">Ajouter au panier</a>
+                    <h3>details produit</h3>
+                    <p>Donnez une touche de style avec votre garde votre robe d'été avec le T-shirt actif pour homme HRX.Associer le à un shaort pour vos séances d'entrainement du matin ou à un jean pour une soirée avec vos gars</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- meilleurs produits -->
+    <section class="featured-products">
+        <section class="container">
+            <div class="row row-2">
+                <h2 class="titre-produits">Tous nos produits</h2>
+                <p>Voir plus</p>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="./images/product-1.jpg" alt="produit 1">
+                    <h3>T-shirt rouge</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>5000 fcfa</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-2.jpg" alt="produit 1">
+                    <h3>basket</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>7000 fcfa</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-3.jpg" alt="produit 1">
+                    <h3>jogging</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>5000 fcfa</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-4.jpg" alt="produit 1">
+                    <h3>Polo</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>5000 fcfa</p>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+
+        </section>
+    </section>
+    <!-- section footer de la page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Télécharger notre application</h3>
+                    <p>Télécharger l'application pour téléphone mobile android et ios</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png" alt="android app">
+                        <img src="./images/app-store.png" alt="ios app">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo noir.png" alt="logo">
+                    <p>Notre objectif est de rendre durable et accessible le plaisir et les bienfaits du sport à tous.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Article de Blog</a></li>
+                        <li><a href="">Politique de retour</a></li>
+                        <li><a href="">Rejoindre l'affiliation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy;Zpro_dev 2022</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = '0px';
+        menuItems.style.padding = '0px';
+
+        function toogleButton() {
+            if (menuItems.style.maxHeight == '0px') {
+                menuItems.style.maxHeight = '200px';
+                menuItems.style.padding = '10px'
+            } else {
+                menuItems.style.maxHeight = '0px'
+                menuItems.style.padding = '0px'
+            }
+        }
+    </script>
+    <!-- sript pour click des produits thumbnail -->
+    <script>
+        var imgProduct = document.getElementById('imgProduct');
+        var imgthumbnails = document.getElementsByClassName('img-thumbnail');
+
+        imgthumbnails[0].onclick = function() {
+            imgProduct.src = imgthumbnails[0].src;
+        }
+        imgthumbnails[1].onclick = function() {
+            imgProduct.src = imgthumbnails[1].src;
+        }
+        imgthumbnails[2].onclick = function() {
+            imgProduct.src = imgthumbnails[2].src;
+        }
+        imgthumbnails[3].onclick = function() {
+            imgProduct.src = imgthumbnails[3].src;
+        }
+        imgthumbnails[4].onclick = function() {
+            imgProduct.src = imgthumbnails[4].src;
+        }
+    </script>
+</body>
+
+</html>

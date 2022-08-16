@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market place</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- section Header -->
+    <section class="header-section">
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/mologo.png" alt="Zpro logo"></a>
+
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="produit.html">Produit</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="authentification.html">Account</a></li>
+                    </ul>
+                    <a href="panier.html"><img src="./images/cart.png" alt="cart-icons" width="26px" class="cart-icon"></a>
+                    <img src="./images/menu.png" alt="menu-icons" width="26px" class="menu-icon" onclick="toogleButton()">
+                </nav>
+            </header>
+    </section>
+    <section class="panier">
+        <div class="container">
+            <div class="row">
+                <table>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Sous Total</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="infos-produit">
+                                <img src="./images/buy-1.jpg" alt="">
+                                <div class="text-produit">
+                                    <h3>T-shirt rouge XHR</h3>
+                                    <p>6000 fcfa</p>
+                                    <a href="">Supprimer</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" value="1">
+                        </td>
+                        <td>
+                            6000 fcfa
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="infos-produit">
+                                <img src="./images/buy-1.jpg" alt="">
+                                <div class="text-produit">
+                                    <h3>T-shirt rouge XHR</h3>
+                                    <p>7000 fcfa</p>
+                                    <a href="">Supprimer</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" value="1">
+                        </td>
+                        <td>
+                            7000 fcfa
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="infos-produit">
+                                <img src="./images/buy-1.jpg" alt="">
+                                <div class="text-produit">
+                                    <h3>T-shirt rouge XHR</h3>
+                                    <p>5000 fcfa</p>
+                                    <a href="">Supprimer</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" value="1">
+                        </td>
+                        <td>
+                            5000 fcfa
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row totaux">
+                <table>
+                    <tr>
+                        <td>Sous Total</td>
+                        <td>25000 fcfa</td>
+                    </tr>
+                    <tr>
+                        <td>Taxes</td>
+                        <td>2000 fcfa</td>
+                    </tr>
+                    <tr>
+                        <td>Totaux</td>
+                        <td>27000 fcfa</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-- section footer de la page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Télécharger notre application</h3>
+                    <p>Télécharger l'application pour téléphone mobile android et ios</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png" alt="android app">
+                        <img src="./images/app-store.png" alt="ios app">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo noir.png" alt="logo">
+                    <p>Notre objectif est de rendre durable et accessible le plaisir et les bienfaits du sport à tous.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Article de Blog</a></li>
+                        <li><a href="">Politique de retour</a></li>
+                        <li><a href="">Rejoindre l'affiliation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy;Zpro_dev 2022</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = '0px';
+        menuItems.style.padding = '0px';
+
+        function toogleButton() {
+            if (menuItems.style.maxHeight == '0px') {
+                menuItems.style.maxHeight = '200px';
+                menuItems.style.padding = '10px'
+            } else {
+                menuItems.style.maxHeight = '0px'
+                menuItems.style.padding = '0px'
+            }
+        }
+    </script>
+</body>
+
+</html>
